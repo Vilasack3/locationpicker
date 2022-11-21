@@ -643,7 +643,7 @@ class PlacePickerState extends State<PlacePicker> {
           await Geolocator.getCurrentPosition(timeLimit: Duration(seconds: 30));
       LatLng target = LatLng(locationData.latitude, locationData.longitude);
       //moveToLocation(target);
-      print('target:$target');
+      print('fuck:$target');
       return target;
     } on TimeoutException catch (e) {
       final locationData = await Geolocator.getLastKnownPosition();
